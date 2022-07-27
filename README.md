@@ -40,23 +40,9 @@ The script was developed and tested under GNU/Linux (precisely, Debian 10). Thus
 *New from 2020.06.09* There now exists an executable file `zoomdl.exe` for Windows. It was kinda tested under Windows 10. Because I never coded under Windows, I have very few tests, mostly empirical ones. Expect bugs! If you encounter a Windows-specific error, don't expect much support. If the error is related to the general logic of the program, report it and I'll do my best to fix it.
 
 ## Installation
-### Linux/OSX
-You need to have a valid Python3 installation. Except from that, just download the script `zoomdl` (not `zoomdl.exe`) and run it like a normal binary. If you wish to make it available system-wide, you can copy it to `/usr/local/bin/` (or anywhere else available in your PATH). Then you can simply use it wherever you want.
 
-The following two commands make that easy. In a terminal, run:
-```bash
-sudo wget https://github.com/Battleman/zoomdl/releases/latest/download/zoomdl -O /usr/bin/zoomdl
-sudo chmod +x /usr/bin/zoomdl
-```
-You will be prompted to enter your password (your computer password, not zoom). It's likely that you won't see anything as you type it, don't worry, it [is normal](https://askubuntu.com/questions/112069/nothing-shows-up-in-the-terminal-when-i-type-my-password) ([even for OSX](https://osxdaily.com/2015/02/04/terminal-wont-show-password-when-typed/))
+First, install python > 3.7. Then, run `pip install zoomdl`. This should work on all operating systems that support python.
 
-Once you have done that, you can use your terminal and type the commands normally.
-
-### Windows
-**This is still in beta**
-Grab the dedicated binary `zoomdl.exe`, and launch it using your command line. If you don't know how, visit [this wikihow](https://www.wikihow.com/Run-an-EXE-File-From-Command-Prompt). You may encounter warning from your anti-virus, you can ignore them (I'm not evil, pinky-promise). You probably don't need a Python3 installation, it *should* be contained within the executable.
-
-If there is a domain in your url, make sure to include it, it's crucial.
 ## Usage
 `zoomdl [-h] -u/--url 'url' [-f/--fname 'filename'] [-p/--password 'password'] [-c/--count-clips count] [-d/--filename-add-date] [--user-agent 'custom_user_agent'] [--save-chat (txt|srt)] [--chat-subtitle-dur number] [--save-transcript (txt|srt)] [--dump-pagemeta]`
 * `-u/--url` is mandatory, it represents the URL of the video
