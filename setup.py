@@ -13,7 +13,7 @@ README = (HERE / "README.md").read_text()
 
 # This call to setup() does all the work
 setup(
-    name="zoomdl",
+    name="zoom-downloader",
     version=zoomdl.__version__,
     description="Zoom recording downloader",
     long_description=README,

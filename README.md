@@ -41,10 +41,12 @@ The script was developed and tested under GNU/Linux (precisely, Debian 10). Thus
 
 ## Installation
 
-First, install python > 3.7. Then, run `pip install zoomdl`. This should work on all operating systems that support python.
+First, install python > 3.7. Then, run `pip install zoom-downloader`. This should work on all operating systems that support python.
 
 ## Usage
+
 `zoomdl [-h] -u/--url 'url' [-f/--fname 'filename'] [-p/--password 'password'] [-c/--count-clips count] [-d/--filename-add-date] [--user-agent 'custom_user_agent'] [--save-chat (txt|srt)] [--chat-subtitle-dur number] [--save-transcript (txt|srt)] [--dump-pagemeta]`
+
 * `-u/--url` is mandatory, it represents the URL of the video
 * `-f/--fname` is optional, it is the name of the resulting file _without extension_. If nothing is provided, the default name given by Zoom will be used. Extension (`.mp4`, `.mkv`,... is automatic)
 * `-p/--password` is too optional. Set it when your video has a password.
