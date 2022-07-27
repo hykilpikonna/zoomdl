@@ -2,9 +2,12 @@
 # coding: utf-8
 """Define the init file, to be called by the main."""
 
-from .zoomdl import ZoomDL
+from .downloader import ZoomDL
 from .utils import parseOpts
 import sys
+
+
+__version__ = '1.0.0'
 
 
 def main():
